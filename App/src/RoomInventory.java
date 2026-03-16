@@ -28,6 +28,9 @@ public class RoomInventory {
      * Key = Room type name
      * Value = Available room count
      */
+    public void addRooms(String roomType, int count) {
+        roomAvailability.put(roomType, count);
+    }
     private Map<String, Integer> roomAvailability;
 
     /**
